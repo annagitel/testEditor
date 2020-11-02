@@ -76,7 +76,7 @@ string in = "";
 }
 
 void Document::changeCurrent(){
-	this->doc.erase(this->doc.begin() + this->currentLine-1);
+	this->doc.erase(this->doc.begin() + this->currentLine);
     addAfterCurrent();
 	cout << "now on line: " << this->currentLine+1 << endl;
 }
